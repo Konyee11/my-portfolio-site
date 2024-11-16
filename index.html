@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Takuma's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/vendors/css-reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <p>Hello World</p>
+    <div id="grobal-container">
+      <div id="container">
+        <header class="header">
+          <div class="header__inner">
+            <div class="header__title">
+              <span class="header__name">Takuma's</span>
+              <span class="header__portfolio accent-color">Portfolio</span>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__ul">
+                <li class="header__li"><a href="#about">About</a></li>
+                <li class="header__li"><a href="#skills">Skills</a></li>
+                <li class="header__li"><a href="#projects">Projects</a></li>
+                <li class="header__li">
+                  <a href="#contact" class="btn filled">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+    </div>
   </body>
 </html>

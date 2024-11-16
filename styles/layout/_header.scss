@@ -1,0 +1,49 @@
+@use "../globals" as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $navHeight;
+  background-color: rgba(174, 198, 207, 0.8);
+  color: $cText;
+
+  &__inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend .content-width;
+  }
+
+  &__title {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  &__nav {
+    // スマホとタブレットの画面サイズの時はナビゲーションは非表示
+    display: none;
+    @include mq(laptop) {
+      display: block;
+    }
+  }
+
+  &__ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__li {
+    margin: 10px;
+
+    & > a {
+      color: $cText;
+
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
