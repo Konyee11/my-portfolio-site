@@ -32,16 +32,6 @@
     @include mq(tablet) {
       flex-direction: row;
     }
-
-    & > .about__img,
-    & > .about__texts {
-      width: 100%;
-
-      @include mq(tablet) {
-        width: 50%;
-        height: auto;
-      }
-    }
   }
 
   &__texts {
