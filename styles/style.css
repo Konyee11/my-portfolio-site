@@ -41,11 +41,11 @@ body {
   margin-bottom: 16px !important;
 }
 
-.mb-lg {
+.mb-lg, .about {
   margin-bottom: 80px !important;
 }
 @media screen and (min-width: 960px) {
-  .mb-lg {
+  .mb-lg, .about {
     margin-bottom: 150px !important;
   }
 }
@@ -268,11 +268,6 @@ body {
   transform: rotateX(-90deg);
 }
 
-.swiper {
-  width: 100%;
-  height: 300px;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -339,14 +334,5 @@ body {
 @media screen and (min-width: 600px) {
   .about__inner {
     flex-direction: row;
-  }
-}
-.about__inner > .about__img, .about__inner > .about__texts {
-  width: 100%;
-}
-@media screen and (min-width: 600px) {
-  .about__inner > .about__img, .about__inner > .about__texts {
-    width: 50%;
-    height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
