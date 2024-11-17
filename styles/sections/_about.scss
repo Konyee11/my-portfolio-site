@@ -1,0 +1,42 @@
+@use "../globals/" as *;
+
+.about {
+  @extend .content-width;
+  @extend .mb-lg;
+  margin-top: ($navHeight + 15px);
+  padding: 15px;
+  background-color: #eaebe6;
+
+  @include mq(tablet) {
+    margin-top: ($navHeight + 30px);
+    padding: 50px;
+  }
+
+  @include mq(laptop) {
+    padding: 50px 150px;
+  }
+
+  &__maintitle {
+    @extend .main-title;
+  }
+
+  &__subtitle {
+    @extend .sub-title;
+    @extend .mb-sm;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+
+    @include mq(tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__texts {
+    @extend .font-sm;
+  }
+}
