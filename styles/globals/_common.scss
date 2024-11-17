@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mq" as *;
 
 html {
   scroll-behavior: smooth;
@@ -15,12 +16,108 @@ body {
   color: $cText;
 }
 
+// コンテンツの横幅を統一する
 .content-width {
   width: 90%;
   margin: 0 auto;
   max-width: $contentMaxWidth;
 }
 
+// タブレットサイズまでは縦並び、それ以上は横並び
+.flex {
+  display: flex;
+  flex-direction: column;
+
+  @include mq(tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .accent-color {
   color: $cAccent;
+}
+
+.image-with-border {
+  border: 5px solid $cSub;
+}
+
+// margin-bottomのサイズを統一する
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+
+.mb-lg {
+  margin-bottom: 80px !important;
+
+  @include mq(laptop) {
+    margin-bottom: 150px !important;
+  }
+}
+
+// margin-topのサイズを統一する
+.mt-sm {
+  margin-top: 16px !important;
+}
+
+.mt-lg {
+  margin-top: 80px !important;
+
+  @include mq(laptop) {
+    margin-top: 150px !important;
+  }
+}
+
+// padding-bottomのサイズを統一する
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+
+.pb-lg {
+  padding-bottom: 80px !important;
+
+  @include mq(laptop) {
+    padding-bottom: 150px !important;
+  }
+}
+
+// フォントサイズを設定（レスポンシブ）
+.font-sm {
+  font-size: 14px;
+  @include mq(laptop) {
+    font-size: 16px;
+  }
+}
+
+.font-md {
+  font-size: 17px;
+  @include mq(laptop) {
+    font-size: 19px;
+  }
+}
+
+.font-lr {
+  font-size: 17px;
+  @include mq(laptop) {
+    font-size: 23px;
+  }
+}
+
+.font-lg {
+  font-size: 25px;
+  @include mq(laptop) {
+    font-size: 36px;
+  }
+}
+
+.main-title {
+  @extend .font-lg;
+  font-weight: 600;
+  margin-bottom: 0;
+  display: block;
+}
+
+.sub-title {
+  @extend .font-sm;
+  color: $cSubTitle;
 }

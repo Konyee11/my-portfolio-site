@@ -1,0 +1,50 @@
+@use "../globals/" as *;
+
+.about {
+  @extend .content-width;
+  margin-top: ($navHeight + 50px);
+  background-color: #eaebe6;
+  padding: 15px;
+
+  @include mq(tablet) {
+    padding: 50px;
+  }
+
+  @include mq(laptop) {
+    padding: 50px 150px;
+  }
+
+  &__maintitle {
+    @extend .main-title;
+  }
+
+  &__subtitle {
+    @extend .sub-title;
+    @extend .mb-sm;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+
+    @include mq(tablet) {
+      flex-direction: row;
+    }
+
+    & > .about__img,
+    & > .about__texts {
+      width: 100%;
+
+      @include mq(tablet) {
+        width: 50%;
+        height: auto;
+      }
+    }
+  }
+
+  &__texts {
+    @extend .font-sm;
+  }
+}

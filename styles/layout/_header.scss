@@ -8,6 +8,7 @@
   height: $navHeight;
   background-color: rgba(174, 198, 207, 0.8);
   color: $cText;
+  z-index: 100;
 
   &__inner {
     height: 100%;
