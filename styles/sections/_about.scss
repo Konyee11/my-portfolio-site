@@ -3,11 +3,12 @@
 .about {
   @extend .content-width;
   @extend .mb-lg;
-  margin-top: ($navHeight + 50px);
-  background-color: #eaebe6;
+  margin-top: ($navHeight + 15px);
   padding: 15px;
+  background-color: #eaebe6;
 
   @include mq(tablet) {
+    margin-top: ($navHeight + 30px);
     padding: 50px;
   }
 

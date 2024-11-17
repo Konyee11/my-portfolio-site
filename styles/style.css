@@ -311,12 +311,13 @@ body {
 }
 
 .about {
-  margin-top: 150px;
-  background-color: #eaebe6;
+  margin-top: 115px;
   padding: 15px;
+  background-color: #eaebe6;
 }
 @media screen and (min-width: 600px) {
   .about {
+    margin-top: 130px;
     padding: 50px;
   }
 }
