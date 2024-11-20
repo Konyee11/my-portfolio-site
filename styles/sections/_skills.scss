@@ -2,6 +2,7 @@
 
 #skills {
   @extend .content-width;
+  @extend .mb-lg;
 
   .skills__maintitle {
     @extend .main-title;
