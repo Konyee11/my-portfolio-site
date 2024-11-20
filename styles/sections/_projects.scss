@@ -1,0 +1,5 @@
+@use "../globals/" as *;
+
+#projects {
+  @extend .content-width;
+}
