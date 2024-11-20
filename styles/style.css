@@ -76,21 +76,21 @@ body {
   }
 }
 
-.font-sm, .about__texts, .sub-title, #skills .skills__subtitle, .about__subtitle {
-  font-size: 14px;
+.font-sm, #skills .skills__description, .about__texts, .sub-title, #projects .projects__subtitle, #skills .skills__subtitle, .about__subtitle {
+  font-size: 10px;
 }
 @media screen and (min-width: 960px) {
-  .font-sm, .about__texts, .sub-title, #skills .skills__subtitle, .about__subtitle {
-    font-size: 16px;
+  .font-sm, #skills .skills__description, .about__texts, .sub-title, #projects .projects__subtitle, #skills .skills__subtitle, .about__subtitle {
+    font-size: 12px;
   }
 }
 
 .font-md, #skills .skills__name {
-  font-size: 17px;
+  font-size: 13px;
 }
 @media screen and (min-width: 960px) {
   .font-md, #skills .skills__name {
-    font-size: 19px;
+    font-size: 15px;
   }
 }
 
@@ -103,22 +103,22 @@ body {
   }
 }
 
-.font-lg, .main-title, #skills .skills__maintitle, .about__maintitle {
+.font-lg, .main-title, #projects .projects__maintitle, #skills .skills__maintitle, .about__maintitle {
   font-size: 25px;
 }
 @media screen and (min-width: 960px) {
-  .font-lg, .main-title, #skills .skills__maintitle, .about__maintitle {
+  .font-lg, .main-title, #projects .projects__maintitle, #skills .skills__maintitle, .about__maintitle {
     font-size: 36px;
   }
 }
 
-.main-title, #skills .skills__maintitle, .about__maintitle {
+.main-title, #projects .projects__maintitle, #skills .skills__maintitle, .about__maintitle {
   font-weight: 600;
   margin-bottom: 0;
   display: block;
 }
 
-.sub-title, #skills .skills__subtitle, .about__subtitle {
+.sub-title, #projects .projects__subtitle, #skills .skills__subtitle, .about__subtitle {
   color: #535353;
 }
 

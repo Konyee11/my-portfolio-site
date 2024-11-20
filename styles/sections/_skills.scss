@@ -80,6 +80,10 @@
     @extend .font-md;
   }
 
+  .skills__description {
+    @extend .font-sm;
+  }
+
   .skills__certification {
     width: 100%;
     height: 100px;
