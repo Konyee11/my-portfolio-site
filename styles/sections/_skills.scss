@@ -2,6 +2,7 @@
 
 #skills {
   @extend .content-width;
+  @extend .mb-lg;
 
   .skills__maintitle {
     @extend .main-title;
@@ -77,6 +78,10 @@
 
   .skills__name {
     @extend .font-md;
+  }
+
+  .skills__description {
+    @extend .font-sm;
   }
 
   .skills__certification {

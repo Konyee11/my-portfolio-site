@@ -1,0 +1,39 @@
+@use "../globals/" as *;
+
+#projects {
+  @extend .content-width;
+  @extend .mb-lg;
+
+  .projects__maintitle {
+    @extend .main-title;
+  }
+
+  .projects__subtitle {
+    @extend .sub-title;
+    @extend .mb-sm;
+  }
+
+  .projects__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .projects__item {
+      @extend .mb-sm;
+    }
+
+    .projects__name {
+      @extend .font-sm;
+      @extend .mt-sm;
+    }
+
+    @include mq(tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .projects__item {
+        max-width: 49%;
+      }
+    }
+  }
+}

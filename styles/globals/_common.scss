@@ -83,16 +83,16 @@ body {
 
 // フォントサイズを設定（レスポンシブ）
 .font-sm {
-  font-size: 14px;
+  font-size: 10px;
   @include mq(laptop) {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
 .font-md {
-  font-size: 17px;
+  font-size: 13px;
   @include mq(laptop) {
-    font-size: 19px;
+    font-size: 15px;
   }
 }
 
