@@ -110,6 +110,13 @@ body {
   }
 }
 
+.logo {
+  display: flex;
+  &__img {
+    width: 1.2em;
+  }
+}
+
 .main-title {
   @extend .font-lg;
   font-weight: 600;

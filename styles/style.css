@@ -13,7 +13,7 @@ body {
   color: #333333;
 }
 
-.content-width, #projects, #skills, .about, .header__inner {
+.content-width, #projects, #skills, .about, #footer > .footer__inner, .header__inner {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -77,11 +77,11 @@ body {
   }
 }
 
-.font-sm, #projects .projects__inner .projects__name, #skills .skills__description, .about__texts, .hover-link__button, .sub-title, #projects .projects__subtitle, #skills .skills__subtitle, .about__subtitle {
+.font-sm, #projects .projects__inner .projects__name, #skills .skills__description, .about__texts, .hover-link__button, .hover-link__button--icon, .sub-title, #projects .projects__subtitle, #skills .skills__subtitle, .about__subtitle {
   font-size: 10px;
 }
 @media screen and (min-width: 960px) {
-  .font-sm, #projects .projects__inner .projects__name, #skills .skills__description, .about__texts, .hover-link__button, .sub-title, #projects .projects__subtitle, #skills .skills__subtitle, .about__subtitle {
+  .font-sm, #projects .projects__inner .projects__name, #skills .skills__description, .about__texts, .hover-link__button, .hover-link__button--icon, .sub-title, #projects .projects__subtitle, #skills .skills__subtitle, .about__subtitle {
     font-size: 12px;
   }
 }
@@ -104,13 +104,20 @@ body {
   }
 }
 
-.font-lg, .main-title, #projects .projects__maintitle, #skills .skills__maintitle, .about__maintitle {
+.font-lg, #footer > .footer__inner > .logo, .logo, .main-title, #projects .projects__maintitle, #skills .skills__maintitle, .about__maintitle {
   font-size: 25px;
 }
 @media screen and (min-width: 960px) {
-  .font-lg, .main-title, #projects .projects__maintitle, #skills .skills__maintitle, .about__maintitle {
+  .font-lg, #footer > .footer__inner > .logo, .logo, .main-title, #projects .projects__maintitle, #skills .skills__maintitle, .about__maintitle {
     font-size: 36px;
   }
+}
+
+.logo {
+  display: flex;
+}
+.logo__img {
+  width: 1.2em;
 }
 
 .main-title, #projects .projects__maintitle, #skills .skills__maintitle, .about__maintitle {
@@ -386,37 +393,40 @@ body {
   opacity: 1;
   transform: translate(-50%, -50%);
 }
-.hover-link__button {
+.hover-link__button, .hover-link__button--icon {
   display: inline-block;
-  padding: 12px 24px;
   color: black;
   text-decoration: none;
   background-color: white;
-  border: 1px solid black;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  padding: 6px 12px;
+  border: 1px solid black;
 }
-.hover-link__button:hover {
+@media screen and (min-width: 600px) {
+  .hover-link__button, .hover-link__button--icon {
+    padding: 12px 24px;
+  }
+}
+.hover-link__button:hover, .hover-link__button--icon:hover {
   color: white;
   background-color: black;
   border-color: white;
-  transform: translateY(-5px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
-.hover-link__button:active {
+.hover-link__button:active, .hover-link__button--icon:active {
   transform: translateY(0);
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
 }
-
-/* アイコンを追加するためのスタイル */
 .hover-link__button--icon {
   display: inline-flex; /* アイコンとテキストを横並びに */
   align-items: center; /* 中央揃え */
   gap: 10px; /* アイコンとテキストの余白 */
 }
 .hover-link__button--icon i {
-  font-size: 1.2em; /* アイコンサイズをemで指定 */
+  font-size: 1.2em; /* アイコンサイズ */
 }
 
 .header {
@@ -434,10 +444,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.header__title {
-  font-size: 35px;
-  font-weight: 600;
 }
 .header__nav {
   display: none;
@@ -459,6 +465,22 @@ body {
   color: #333333;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+#footer {
+  background-color: #eaebe6;
+}
+#footer > .footer__inner {
+  padding: 60px 0;
+}
+#footer > .footer__inner > .logo {
+  justify-content: center;
+}
+
+.copyright {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
 }
 
 .about {
