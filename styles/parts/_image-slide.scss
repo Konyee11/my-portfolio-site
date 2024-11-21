@@ -169,9 +169,14 @@
   }
 
   &__button {
-    @include button-base; /* ボタンの共通スタイルをmixin化 */
-    padding: 12px 24px;
+    @include button-base;
+    @extend .font-sm;
+    padding: 6px 12px;
     border: 1px solid $cBlack;
+
+    @include mq(tablet) {
+      padding: 12px 24px;
+    }
 
     &:hover {
       @include button-hover($cWhite, $cBlack);
