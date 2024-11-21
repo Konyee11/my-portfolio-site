@@ -1,0 +1,21 @@
+@use "../globals/" as *;
+
+#footer {
+  background-color: #eaebe6;
+
+  & > .footer__inner {
+    @extend .content-width;
+    padding: 60px 0;
+
+    & > .logo {
+      @extend .font-lg;
+      justify-content: center;
+    }
+  }
+}
+
+.copyright {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+}
