@@ -1,5 +1,6 @@
 @charset "UTF-8";
-html {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -13,7 +14,7 @@ body {
   color: #333333;
 }
 
-.content-width, #projects, #skills, .about, #footer > .footer__inner, .header__inner {
+.content-width, #contact, #projects, #skills, .about, #footer > .footer__inner, .header__inner {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -38,7 +39,7 @@ body {
   border: 5px solid #aec6cf;
 }
 
-.mb-sm, #projects .projects__subtitle, #projects .projects__inner .projects__item, #skills .skills__subtitle, #skills .skills__rating-description, .about__subtitle {
+.mb-sm, #contact, #contact > p, #projects .projects__subtitle, #projects .projects__inner .projects__item, #skills .skills__subtitle, #skills .skills__rating-description, .about__subtitle {
   margin-bottom: 16px !important;
 }
 
@@ -77,11 +78,11 @@ body {
   }
 }
 
-.font-sm, #projects .projects__inner .projects__name, #skills .skills__description, .about__texts, .hover-link__button, .hover-link__button--icon, .sub-title, #projects .projects__subtitle, #skills .skills__subtitle, .about__subtitle {
+.font-sm, #projects .projects__inner .projects__name, #skills .skills__description, .about__texts, .hover-link__button, .hover-link__button--icon, .sub-title, #contact > p, #projects .projects__subtitle, #skills .skills__subtitle, .about__subtitle {
   font-size: 10px;
 }
 @media screen and (min-width: 960px) {
-  .font-sm, #projects .projects__inner .projects__name, #skills .skills__description, .about__texts, .hover-link__button, .hover-link__button--icon, .sub-title, #projects .projects__subtitle, #skills .skills__subtitle, .about__subtitle {
+  .font-sm, #projects .projects__inner .projects__name, #skills .skills__description, .about__texts, .hover-link__button, .hover-link__button--icon, .sub-title, #contact > p, #projects .projects__subtitle, #skills .skills__subtitle, .about__subtitle {
     font-size: 12px;
   }
 }
@@ -104,11 +105,11 @@ body {
   }
 }
 
-.font-lg, #footer > .footer__inner > .logo, .logo, .main-title, #projects .projects__maintitle, #skills .skills__maintitle, .about__maintitle {
+.font-lg, #footer > .footer__inner > .logo, .logo, .main-title, #contact > h2, #projects .projects__maintitle, #skills .skills__maintitle, .about__maintitle {
   font-size: 25px;
 }
 @media screen and (min-width: 960px) {
-  .font-lg, #footer > .footer__inner > .logo, .logo, .main-title, #projects .projects__maintitle, #skills .skills__maintitle, .about__maintitle {
+  .font-lg, #footer > .footer__inner > .logo, .logo, .main-title, #contact > h2, #projects .projects__maintitle, #skills .skills__maintitle, .about__maintitle {
     font-size: 36px;
   }
 }
@@ -120,13 +121,13 @@ body {
   width: 1.2em;
 }
 
-.main-title, #projects .projects__maintitle, #skills .skills__maintitle, .about__maintitle {
+.main-title, #contact > h2, #projects .projects__maintitle, #skills .skills__maintitle, .about__maintitle {
   font-weight: 600;
   margin-bottom: 0;
   display: block;
 }
 
-.sub-title, #projects .projects__subtitle, #skills .skills__subtitle, .about__subtitle {
+.sub-title, #contact > p, #projects .projects__subtitle, #skills .skills__subtitle, .about__subtitle {
   color: #535353;
 }
 
@@ -576,4 +577,26 @@ body {
   #projects .projects__inner .projects__item {
     max-width: 49%;
   }
+}
+
+#contact {
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  border-top: 1px solid black;
+}
+#contact > h2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 10px;
+  background-color: #ffffff;
+}
+.email {
+  text-decoration: none;
+  color: #333333;
+}
+.email > i {
+  margin-right: 5px;
 }/*# sourceMappingURL=style.css.map */

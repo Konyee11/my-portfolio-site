@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Takuma's Portfolio</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +19,7 @@
     />
 
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
 
@@ -56,44 +57,46 @@
         <div id="content">
           <div id="main-content">
             <div class="main">
-              <section class="about">
-                <div class="about__container">
-                  <h2 class="about__maintitle">
-                    <span>About</span>
-                  </h2>
-                  <div class="about__subtitle">
-                    <span>私について</span>
-                  </div>
-                  <div class="about__inner">
-                    <div class="about__img">
-                      <img
-                        src="images/about.jpg"
-                        alt="About section image"
-                        class="image-with-border"
-                      />
+              <section id="about">
+                <div class="about">
+                  <div class="about__container">
+                    <h2 class="about__maintitle">
+                      <span>About</span>
+                    </h2>
+                    <div class="about__subtitle">
+                      <span>私について</span>
                     </div>
-                    <div class="about__texts">
-                      <h3 class="mb-sm">はじめまして、小西巧真です</h3>
-                      <p>
-                        京都産業大学 情報理工学部
-                        玉田研究室に所属しています。私は在学中に大きな挫折を経験しましたが、それは自分自身を見つめ直す大切なきっかけとなったと思っています。現在は挫折を乗り越え、新しい挑戦に向けて日々学んでいます。
-                      </p>
-                      <h3 class="mt-sm mb-sm">
-                        デザインも実装もできるエンジニア
-                      </h3>
-                      <p>
-                        デザインが生み出す心地よさと、実装が支える安定感。その二つが繋がったとき、ただ便利なだけでなく、使う人に感動を与えるプロダクトができると思います。デザインと実装の両方を手がけ、そんなプロダクトを作り出せるエンジニアが憧れであり、自分の目標です。
-                      </p>
-                      <h3 class="mt-sm mb-sm">
-                        無駄がなくシンプルなモノが好き
-                      </h3>
-                      <p>
-                        シンプルなものには、無駄がない美しさがあってとても惹かれます。たくさんの要素を詰め込むのも魅力的ではありますが、必要なものだけに絞ることで、かえって本質的な部分が際立つと感じます。またシンプルなデザインや仕組みは、誰にでもわかりやすくて、使う人のことをしっかり考えているような優しさがあるところも好きです。そういう余裕や洗練を感じるシンプルさには、目に見えない豊かさがあるのだと思います。
-                      </p>
-                      <br />
-                      <p>
-                        このポートフォリオでは、私の挑戦と成果をお伝えできればと思います。
-                      </p>
+                    <div class="about__inner">
+                      <div class="about__img">
+                        <img
+                          src="images/about.jpg"
+                          alt="About section image"
+                          class="image-with-border"
+                        />
+                      </div>
+                      <div class="about__texts">
+                        <h3 class="mb-sm">はじめまして、小西巧真です</h3>
+                        <p>
+                          京都産業大学 情報理工学部
+                          玉田研究室に所属しています。私は在学中に大きな挫折を経験しましたが、それは自分自身を見つめ直す大切なきっかけとなったと思っています。現在は挫折を乗り越え、新しい挑戦に向けて日々学んでいます。
+                        </p>
+                        <h3 class="mt-sm mb-sm">
+                          デザインも実装もできるエンジニア
+                        </h3>
+                        <p>
+                          デザインが生み出す心地よさと、実装が支える安定感。その二つが繋がったとき、ただ便利なだけでなく、使う人に感動を与えるプロダクトができると思います。デザインと実装の両方を手がけ、そんなプロダクトを作り出せるエンジニアが憧れであり、自分の目標です。
+                        </p>
+                        <h3 class="mt-sm mb-sm">
+                          無駄がなくシンプルなモノが好き
+                        </h3>
+                        <p>
+                          私はシンプルなものに心惹かれます。多くの要素を詰め込むよりも、本当に必要なものだけを選び取ることで、本質が輝き出すと思うのです。さらに、シンプルなデザインには誰でも直感的に理解できる親しみやすさや、使う人への優しさが含まれています。その背後にある見えない豊かさや洗練こそが、シンプルさの真価だと感じています。
+                        </p>
+                        <br />
+                        <p>
+                          このポートフォリオでは、私の挑戦と成果をお伝えできればと思います。
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -536,6 +539,15 @@
                     </div>
                   </div>
                 </div>
+              </section>
+
+              <section id="contact">
+                <h2>Contact</h2>
+                <p>ご連絡は以下のメールアドレスへ。</p>
+
+                <a href="milto:t.konishi@gmail.com" class="email btn slide-bg"
+                  ><i class="fa-regular fa-envelope"></i>Email</a
+                >
               </section>
             </div>
             <!-- main-content -->
