@@ -1,10 +1,13 @@
 @use "../globals/" as *;
 
-.about {
+#about {
   @extend .content-width;
   @extend .mb-lg;
   margin-top: ($navHeight + 15px);
   padding: 15px;
+}
+
+.about {
   background-color: #eaebe6;
 
   @include mq(tablet) {
@@ -34,6 +37,10 @@
     @include mq(tablet) {
       flex-direction: row;
     }
+  }
+
+  &__img {
+    background-color: $cSub;
   }
 
   &__texts {

@@ -14,7 +14,7 @@ body {
   color: #333333;
 }
 
-.content-width, #contact, #projects, #skills, .about, #footer > .footer__inner, .header__inner {
+.content-width, #contact, #projects, #skills, #about, #footer > .footer__inner, .header__inner {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -36,18 +36,18 @@ body {
 }
 
 .image-with-border {
-  border: 5px solid #aec6cf;
+  outline: 5px solid #aec6cf;
 }
 
 .mb-sm, #contact, #contact > p, #projects .projects__subtitle, #projects .projects__inner .projects__item, #skills .skills__subtitle, #skills .skills__rating-description, .about__subtitle {
   margin-bottom: 16px !important;
 }
 
-.mb-lg, #projects, #skills, .about {
+.mb-lg, #projects, #skills, #about {
   margin-bottom: 80px !important;
 }
 @media screen and (min-width: 960px) {
-  .mb-lg, #projects, #skills, .about {
+  .mb-lg, #projects, #skills, #about {
     margin-bottom: 150px !important;
   }
 }
@@ -484,9 +484,12 @@ body {
   justify-content: center;
 }
 
-.about {
+#about {
   margin-top: 115px;
   padding: 15px;
+}
+
+.about {
   background-color: #eaebe6;
 }
 @media screen and (min-width: 600px) {
@@ -510,6 +513,9 @@ body {
   .about__inner {
     flex-direction: row;
   }
+}
+.about__img {
+  background-color: #aec6cf;
 }
 #skills .skills__rating-description {
   padding: 15px;
