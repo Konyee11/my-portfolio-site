@@ -1,0 +1,34 @@
+@use "../globals/" as *;
+
+#contact {
+  @extend .content-width;
+  @extend .mb-sm;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  border-top: 1px solid $cBlack;
+
+  & > h2 {
+    @extend .main-title;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 10px;
+    background-color: $cBase;
+  }
+
+  & > p {
+    @extend .sub-title;
+    @extend .mb-sm;
+  }
+}
+
+.email {
+  text-decoration: none;
+  color: $cText;
+
+  & > i {
+    margin-right: 5px;
+  }
+}
