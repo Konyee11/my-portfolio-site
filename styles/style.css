@@ -36,7 +36,7 @@ body {
 }
 
 .image-with-border {
-  outline: 5px solid #aec6cf;
+  border: 5px solid #aec6cf;
 }
 
 .mb-sm, #contact, #contact > p, #projects .projects__subtitle, #projects .projects__inner .projects__item, #skills .skills__subtitle, #skills .skills__rating-description, .about__subtitle {
@@ -458,9 +458,7 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
-}
-.header__li {
-  margin: 10px;
+  gap: 10px;
 }
 .header__li > a {
   color: #333333;
@@ -486,7 +484,6 @@ body {
 
 #about {
   margin-top: 115px;
-  padding: 15px;
 }
 
 .about {
