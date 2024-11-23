@@ -8,6 +8,7 @@
 
 .about {
   background-color: #eaebe6;
+  padding: 20px;
 
   @include mq(tablet) {
     margin-top: ($navHeight + 30px);
