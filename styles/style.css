@@ -430,6 +430,29 @@ body {
   font-size: 1.2em; /* アイコンサイズ */
 }
 
+.mobile-menu__btn {
+  background-color: unset;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+}
+@media screen and (min-width: 960px) {
+  .mobile-menu__btn {
+    display: none;
+  }
+}
+.mobile-menu__btn > span {
+  background-color: black;
+  width: 35px;
+  height: 2px;
+  display: block;
+  margin-bottom: 9px;
+  transition: transform 0.7s;
+}
+.mobile-menu__btn > span:last-child {
+  margin-bottom: 0;
+}
+
 .header {
   position: fixed;
   top: 0;

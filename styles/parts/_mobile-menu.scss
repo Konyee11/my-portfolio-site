@@ -1,0 +1,26 @@
+@use "../globals/" as *;
+
+.mobile-menu {
+  &__btn {
+    @include mq(laptop) {
+      display: none;
+    }
+    background-color: unset;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+
+    & > span {
+      background-color: $cBlack;
+      width: 35px;
+      height: 2px;
+      display: block;
+      margin-bottom: 9px;
+      transition: transform 0.7s;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
