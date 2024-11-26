@@ -3,7 +3,6 @@
 #about {
   @extend .content-width;
   @extend .mb-lg;
-  margin-top: ($navHeight + 15px);
 }
 
 .about {
@@ -11,7 +10,6 @@
   padding: 20px;
 
   @include mq(tablet) {
-    margin-top: ($navHeight + 30px);
     padding: 50px;
   }
 

@@ -1,6 +1,34 @@
 @use "../globals/" as *;
 
+#container {
+  position: relative;
+  padding-top: $navHeight;
+  transition: transform 0.7s, box-shadow 0.7s;
+}
+
+// モバイルメニュー
 .mobile-menu {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 300px;
+
+  &__main {
+    padding: 0;
+    transform: translate(300px, -60px);
+    transition: transform 0.7s;
+  }
+
+  &__item {
+    list-style: none;
+    padding-left: 40px;
+  }
+
+  &__link {
+    text-decoration: none !important;
+    color: $cText;
+  }
+
   &__btn {
     @include mq(laptop) {
       display: none;
@@ -26,8 +54,18 @@
   }
 }
 
+// モバイルメニューが開いたときのスタイル
 .menu-open {
+  & #container {
+    transform: translate(-300px, 60px);
+    box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+  }
+
   & .mobile-menu {
+    &__main {
+      transform: none;
+    }
+
     &__btn {
       & > span {
         &:nth-child(1) {
