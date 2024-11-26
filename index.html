@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <div id="grobal-container">
+    <div id="global-container">
       <div id="container">
         <header class="header">
           <div class="header__inner">
@@ -51,6 +51,11 @@
                 </li>
               </ul>
             </nav>
+            <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
         </header>
 
@@ -101,6 +106,7 @@
                   </div>
                 </div>
               </section>
+
               <section id="skills">
                 <div class="skills__title">
                   <h2 class="skills__maintitle">
@@ -428,6 +434,7 @@
                 </div>
                 <!-- <div class="skills__certification"></div> -->
               </section>
+
               <section id="projects">
                 <div class="projects__title">
                   <h2 class="projects__maintitle">
@@ -575,7 +582,36 @@
 
         <!-- container -->
       </div>
-      <!-- grobal-container -->
+
+      <nav class="mobile-menu">
+        <ul class="mobile-menu__main">
+          <li class="mobile-menu__item">
+            <a href="#about" class="mobile-menu__link">
+              <span class="main-title">About</span>
+              <span class="sub-title">私について</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#skills" class="mobile-menu__link">
+              <span class="main-title">Skills</span>
+              <span class="sub-title">今まで学んだ技術や興味のある技術</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#projects" class="mobile-menu__link">
+              <span class="main-title">Projects</span>
+              <span class="sub-title">成果物について</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#contact" class="mobile-menu__link">
+              <span class="main-title">Contact</span>
+              <span class="sub-title">連絡先</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- global-container -->
     </div>
 
     <!-- 著作権表示の年を動的に変更する -->
@@ -583,7 +619,7 @@
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 
-    <script src="scripts/vendors/swiper-bundle.min.js"></script>
+    <script src="scripts/libs/mobile-menu.js"></script>
     <script src="scripts/libs/scroll.js"></script>
     <script src="scripts/vendors/scroll-polyfill.js"></script>
     <script src="scripts/main.js"></script>
