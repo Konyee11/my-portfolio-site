@@ -1,627 +1,488 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Takuma's Portfolio</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@500&display=swap"
-      rel="stylesheet"
-    />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Takuma's Portfolio</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@500&display=swap"
+    rel="stylesheet" />
 
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-    <link rel="stylesheet" href="styles/vendors/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="styles/vendors/css-reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
-  <body>
-    <div id="global-container">
-      <div id="container">
-        <header class="header">
-          <div class="header__inner">
-            <div class="logo">
-              <img
-                src="images/logo.svg"
-                alt="Takuma's Portfolio Logo"
-                class="logo__img"
-              />
-              <span class="logo__name">Takuma's</span>
-              <span class="logo__portfolio accent-color">Portfolio</span>
-            </div>
-            <nav class="header__nav">
-              <ul class="header__ul">
-                <li class="header__li"><a href="#about">About</a></li>
-                <li class="header__li"><a href="#skills">Skills</a></li>
-                <li class="header__li"><a href="#projects">Projects</a></li>
-                <li class="header__li">
-                  <a href="#contact" class="btn filled">Contact</a>
-                </li>
-              </ul>
-            </nav>
-            <button class="mobile-menu__btn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/vendors/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles/vendors/css-reset.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+  <div id="global-container">
+    <div id="container">
+      <div class="mobile-menu__cover"></div>
+      <header class="header">
+        <div class="header__inner">
+          <div class="logo">
+            <img src="images/logo.svg" alt="Takuma's Portfolio Logo" class="logo__img" />
+            <span class="logo__name">Takuma's</span>
+            <span class="logo__portfolio accent-color">Portfolio</span>
           </div>
-        </header>
-
-        <div id="content">
-          <div id="main-content">
-            <div class="main">
-              <section id="about">
-                <div class="about">
-                  <div class="about__container">
-                    <h2 class="about__maintitle">
-                      <span>About</span>
-                    </h2>
-                    <div class="about__subtitle">
-                      <span>私について</span>
-                    </div>
-                    <div class="about__inner">
-                      <div class="about__img image-with-border cover-slide">
-                        <img
-                          src="images/about.jpg"
-                          alt="About section image"
-                          class="img-zoom"
-                        />
-                      </div>
-                      <div class="about__texts">
-                        <h3 class="mb-sm">はじめまして、小西巧真です</h3>
-                        <p>
-                          京都産業大学 情報理工学部
-                          玉田研究室に所属しています。私は在学中に大きな挫折を経験しましたが、それは自分自身を見つめ直す大切なきっかけとなったと思っています。現在は挫折を乗り越え、新しい挑戦に向けて日々学んでいます。
-                        </p>
-                        <h3 class="mt-sm mb-sm">
-                          デザインも実装もできるエンジニア
-                        </h3>
-                        <p>
-                          デザインが生み出す心地よさと、実装が支える安定感。その二つが繋がったとき、ただ便利なだけでなく、使う人に感動を与えるプロダクトができると思います。デザインと実装の両方を手がけ、そんなプロダクトを作り出せるエンジニアが憧れであり、自分の目標です。
-                        </p>
-                        <h3 class="mt-sm mb-sm">
-                          無駄がなくシンプルなモノが好き
-                        </h3>
-                        <p>
-                          私はシンプルなものに心惹かれます。多くの要素を詰め込むよりも、本当に必要なものだけを選び取ることで、本質が輝き出すと思うのです。さらに、シンプルなデザインには誰でも直感的に理解できる親しみやすさや、使う人への優しさが含まれています。その背後にある見えない豊かさや洗練こそが、シンプルさの真価だと感じています。
-                        </p>
-                        <br />
-                        <p>
-                          このポートフォリオでは、私の挑戦と成果をお伝えできればと思います。
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section id="skills">
-                <div class="skills__title">
-                  <h2 class="skills__maintitle">
-                    <p>Skills</p>
-                  </h2>
-                  <div class="skills__subtitle">
-                    <p>今まで学んだ技術や興味のある技術</p>
-                  </div>
-                </div>
-                <div class="skills__rating-description">
-                  <p>
-                    <small class="star">★1 基本を学習中</small
-                    ><small class="star">★2 初歩的な実装ができる</small
-                    ><small class="star">★3 個人プロジェクトで実装</small
-                    ><small class="star">★4 実用性を重視できる</small
-                    ><small class="star">★5 深い知識があり人に教えられる</small>
-                  </p>
-                </div>
-                <div class="skills__main">
-                  <div class="skills__frontend">
-                    <div class="skills__category">
-                      <p>Frontend</p>
-                    </div>
-                    <div class="skills__items">
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                            alt="HTML Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">HTML</p>
-                        </div>
-                        <div class="skills__rating">★★★☆☆</div>
-                        <small class="skills__description">
-                          個人プロジェクトで使用経験があり、適切な構造化やセマンティックなマークアップが可能です。</small
-                        >
-                      </div>
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                            alt="CSS Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">CSS</p>
-                        </div>
-                        <div class="skills__rating">★★★★☆</div>
-                        <small class="skills__description">
-                          個人プロジェクトで使用経験があり、レスポンシブデザインやフレックスボックス、グリッドレイアウトを使用したページレイアウトが可能です。</small
-                        >
-                      </div>
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
-                            alt="CSS Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">Sass</p>
-                        </div>
-                        <div class="skills__rating">★★★★☆</div>
-                        <small class="skills__description">
-                          個人プロジェクトで使用経験があり、ネストやミックスイン、モジュール化を活用した再利用性の高いスタイル設計が可能です。</small
-                        >
-                      </div>
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                            alt="CSS Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">JavaScript(ES6+)</p>
-                        </div>
-                        <div class="skills__rating">★★★☆☆</div>
-                        <small class="skills__description"
-                          >-
-                          個人プロジェクトで使用経験があり、DOM操作を駆使してインタラクティブな動きを実装可能です。また、GSAPを使用したアニメーションやトランジションを活用して、動的なユーザーインターフェースを構築した経験があります。</small
-                        >
-                      </div>
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-                            alt="CSS Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">React</p>
-                        </div>
-                        <div class="skills__rating">★★☆☆☆</div>
-                        <small class="skills__description"
-                          >個人プロジェクトで使用経験があり、コンポーネントベースの設計を理解し、PropsやStateを活用した動的なUIを構築可能です。</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skills__backend">
-                    <div class="skills__category">
-                      <p>Backend</p>
-                    </div>
-                    <div class="skills__items">
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-                            alt="HTML Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">Node.js</p>
-                        </div>
-                        <div class="skills__rating">★★★☆☆</div>
-                        <small class="skills__description"
-                          >-
-                          個人プロジェクトで使用経験があり、Expressを活用したRESTful
-                          APIの構築が可能です。また、非同期処理やミドルウェアを理解し、バックエンドの基本的な機能を実装できます。</small
-                        >
-                      </div>
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
-                            alt="CSS Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">Express</p>
-                        </div>
-                        <div class="skills__rating">★★★☆☆</div>
-                        <small class="skills__description"
-                          >個人プロジェクトで使用経験があり、RESTful
-                          APIの設計やルーティング、ミドルウェアの活用が可能です。また、データベース（MongoDBなど）との連携や、認証機能の実装も経験しています。</small
-                        >
-                      </div>
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-                            alt="CSS Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">MongoDB</p>
-                        </div>
-                        <div class="skills__rating">★★☆☆☆</div>
-                        <small class="skills__description"
-                          >個人プロジェクトで使用経験があり、CRUD操作やスキーマレスなデータモデルの設計が可能です。</small
-                        >
-                      </div>
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg"
-                            alt="CSS Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">Go / Gin</p>
-                        </div>
-                        <div class="skills__rating">★★☆☆☆</div>
-                        <small class="skills__description"
-                          >-
-                          小規模な個人プロジェクトで使用経験があり、Ginを用いて基本的なルーティングやハンドラの作成が可能です。</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skills__devops">
-                    <div class="skills__category">
-                      <p>DevOps</p>
-                    </div>
-                    <div class="skills__items">
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                            alt="HTML Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">AWS</p>
-                        </div>
-                        <div class="skills__rating">★★★☆☆</div>
-                        <small class="skills__description"
-                          >-
-                          個人プロジェクトや大学研究室のチーム開発で使用経験があり。EC2,
-                          S3, CloudFront, Lambda, DynamoDB, RDS, CloudFormation,
-                          CloudFront,
-                          IAM等を主に使用しました。またAWS認定クラウドプラクティショナーを保有しています。</small
-                        >
-                      </div>
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
-                            alt="CSS Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">Docker</p>
-                        </div>
-                        <div class="skills__rating">★★☆☆☆</div>
-                        <small class="skills__description"
-                          >-
-                          小規模な開発環境で使用経験があり、コンテナの作成やイメージのビルド、基本的なDockerfileの記述が可能です。</small
-                        >
-                      </div>
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-original.svg"
-                            alt="CSS Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">Apache</p>
-                        </div>
-                        <div class="skills__rating">★☆☆☆☆</div>
-                        <small class="skills__description"
-                          >-
-                          EC2上でApacheを用いてWebサーバーを構築し、WordPressのインストールと設定を行った経験があります。また、基本的な設定変更やサーバーの起動・停止などの操作が可能です。</small
-                        >
-                      </div>
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
-                            alt="CSS Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">Linux (Ubuntu)</p>
-                        </div>
-                        <div class="skills__rating">★★★☆☆</div>
-                        <small class="skills__description"
-                          >-
-                          WSL+Ubuntuを用いてLinuxの開発環境を構築し、コマンドラインでの基本操作やパッケージ管理（apt）を活用した開発を行っています。</small
-                        >
-                      </div>
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
-                            alt="CSS Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">git / GitHub</p>
-                        </div>
-                        <div class="skills__rating">★★★☆☆</div>
-                        <small class="skills__description"
-                          >GitHub
-                          Flowを活用したチーム開発を想定したブランチ運用や、Pull
-                          Requestを使ったレビューの経験があります。</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skills__whatsnext">
-                    <div class="skills__category">
-                      <p>What's Next</p>
-                    </div>
-                    <div class="skills__items">
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                            alt="HTML Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">TypeScript</p>
-                        </div>
-                        <small class="skills__description"
-                          >JavaScriptの柔軟さによるバグを減らし、安全で効率的なコードを書くためにTypeScriptに興味を持ちました。また、ReactやNode.jsと組み合わせて保守性の高いプロジェクトを作れるようになりたいと考えています。</small
-                        >
-                      </div>
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg"
-                            alt="CSS Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">NestJS</p>
-                        </div>
-                        <small class="skills__description"
-                          >効率的でスケーラブルなバックエンド開発を行うために、TypeScriptベースのフレームワークであるNestJSに興味を持ちました。</small
-                        >
-                      </div>
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-                            alt="CSS Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">Tailwind CSS</p>
-                        </div>
-                        <small class="skills__description"
-                          >効率的にスタイリングを行い、保守性の高いデザインを実現するために、ユーティリティファーストなCSSフレームワークであるTailwind
-                          CSSに興味を持ちました。</small
-                        >
-                      </div>
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg"
-                            alt="CSS Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">GraphQL</p>
-                        </div>
-                        <small class="skills__description"
-                          >データ取得を効率化し、必要なデータだけを柔軟に取得できるGraphQLに興味を持ちました。また、フロントエンドとバックエンドの連携を最適化し、API設計の新しい手法を学びたいと考えています。</small
-                        >
-                      </div>
-                      <div class="skills__item">
-                        <div class="skills__icon-name">
-                          <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"
-                            alt="CSS Icon"
-                            class="skills__icon"
-                          />
-                          <p class="skills__name">CI / CD (GitHub Actions)</p>
-                        </div>
-                        <small class="skills__description"
-                          >開発の効率化と品質向上を目的に、自動化を実現するCI/CDツールに興味を持ちました。特にGitHub
-                          Actionsを活用して、テスト・ビルド・デプロイを自動化するプロセスを学びたいと考えています。</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- <div class="skills__certification"></div> -->
-              </section>
-
-              <section id="projects">
-                <div class="projects__title">
-                  <h2 class="projects__maintitle">
-                    <p>Projects</p>
-                  </h2>
-                  <div class="projects__subtitle">
-                    <p>私の成果物</p>
-                  </div>
-                </div>
-                <div class="projects__inner">
-                  <div class="projects__item">
-                    <div class="cover-slide hover-darken hover-link">
-                      <img
-                        src="images/my-portfolio-site.png"
-                        alt="My Portfolio Website Screenshot"
-                        class="img-zoom"
-                      />
-                      <div class="hover-link__buttons">
-                        <a
-                          href="https://github.com/Konyee11/my-portfolio-site"
-                          class="hover-link__button hover-link__button--icon"
-                          ><i class="fab fa-github"></i>GitHub</a
-                        >
-                        <a
-                          href="#"
-                          class="hover-link__button hover-link__button--icon"
-                          ><i class="fas fa-link"></i>Project</a
-                        >
-                      </div>
-                    </div>
-                    <div class="projects__name">Takuma's Portfolio</div>
-                    <div class="projects__description font-sm">
-                      <p>このポートフォリオサイトです。</p>
-                    </div>
-                  </div>
-                  <div class="projects__item">
-                    <div class="cover-slide hover-darken hover-link">
-                      <img
-                        src="images/my-portfolio-site.png"
-                        alt="My Portfolio Website Screenshot"
-                        class="img-zoom"
-                      />
-                      <div class="hover-link__buttons">
-                        <a
-                          href="https://github.com/Konyee11/my-portfolio-site"
-                          class="hover-link__button hover-link__button--icon"
-                          ><i class="fab fa-github"></i>GitHub</a
-                        >
-                        <a
-                          href="#"
-                          class="hover-link__button hover-link__button--icon"
-                          ><i class="fas fa-link"></i>Project</a
-                        >
-                      </div>
-                    </div>
-                    <div class="projects__name">Takuma's Portfolio</div>
-                    <div class="projects__description font-sm">
-                      <p>このポートフォリオサイトです。</p>
-                    </div>
-                  </div>
-                  <div class="projects__item">
-                    <div class="cover-slide hover-darken hover-link">
-                      <img
-                        src="images/my-portfolio-site.png"
-                        alt="My Portfolio Website Screenshot"
-                        class="img-zoom"
-                      />
-                      <div class="hover-link__buttons">
-                        <a
-                          href="https://github.com/Konyee11/my-portfolio-site"
-                          class="hover-link__button hover-link__button--icon"
-                          ><i class="fab fa-github"></i>GitHub</a
-                        >
-                        <a
-                          href="#"
-                          class="hover-link__button hover-link__button--icon"
-                          ><i class="fas fa-link"></i>Project</a
-                        >
-                      </div>
-                    </div>
-                    <div class="projects__name">Takuma's Portfolio</div>
-                    <div class="projects__description font-sm">
-                      <p>このポートフォリオサイトです。</p>
-                    </div>
-                  </div>
-                  <div class="projects__item">
-                    <div class="cover-slide hover-darken hover-link">
-                      <img
-                        src="images/my-portfolio-site.png"
-                        alt="My Portfolio Website Screenshot"
-                        class="img-zoom"
-                      />
-                      <div class="hover-link__buttons">
-                        <a
-                          href="https://github.com/Konyee11/my-portfolio-site"
-                          class="hover-link__button hover-link__button--icon"
-                          ><i class="fab fa-github"></i>GitHub</a
-                        >
-                        <a
-                          href="#"
-                          class="hover-link__button hover-link__button--icon"
-                          ><i class="fas fa-link"></i>Project</a
-                        >
-                      </div>
-                    </div>
-                    <div class="projects__name">Takuma's Portfolio</div>
-                    <div class="projects__description font-sm">
-                      <p>このポートフォリオサイトです。</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section id="contact">
-                <h2>Contact</h2>
-                <p>ご連絡は以下のメールアドレスへ。</p>
-
-                <a href="milto:t.konishi@gmail.com" class="email btn slide-bg"
-                  ><i class="fa-regular fa-envelope"></i>Email</a
-                >
-              </section>
-            </div>
-            <!-- main-content -->
-          </div>
-          <!-- content -->
+          <nav class="header__nav">
+            <ul class="header__ul">
+              <li class="header__li"><a href="#about">About</a></li>
+              <li class="header__li"><a href="#skills">Skills</a></li>
+              <li class="header__li"><a href="#projects">Projects</a></li>
+              <li class="header__li">
+                <a href="#contact" class="btn filled">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="mobile-menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
+      </header>
 
-        <footer id="footer">
-          <div class="footer__inner">
-            <div class="logo">
-              <img
-                src="images/logo.svg"
-                alt="Takuma's Portfolio Logo"
-                class="logo__img"
-              />
-              <span class="logo__name">Takuma's</span>
-              <span class="logo__portfolio accent-color">Portfolio</span>
-            </div>
-            <div class="copyright">
-              &copy; <span id="year"></span> -Takuma Konishi. All rights
-              reserved.
-            </div>
+      <div id="content">
+        <div id="main-content">
+          <div class="main">
+            <section id="about">
+              <div class="about">
+                <div class="about__container">
+                  <h2 class="about__maintitle">
+                    <span>About</span>
+                  </h2>
+                  <div class="about__subtitle">
+                    <span>私について</span>
+                  </div>
+                  <div class="about__inner">
+                    <div class="about__img image-with-border cover-slide">
+                      <img src="images/about.jpg" alt="About section image" class="img-zoom" />
+                    </div>
+                    <div class="about__texts">
+                      <h3 class="mb-sm">はじめまして、小西巧真です</h3>
+                      <p>
+                        京都産業大学 情報理工学部
+                        玉田研究室に所属しています。私は在学中に大きな挫折を経験しましたが、それは自分自身を見つめ直す大切なきっかけとなったと思っています。現在は挫折を乗り越え、新しい挑戦に向けて日々学んでいます。
+                      </p>
+                      <h3 class="mt-sm mb-sm">
+                        デザインも実装もできるエンジニア
+                      </h3>
+                      <p>
+                        デザインが生み出す心地よさと、実装が支える安定感。その二つが繋がったとき、ただ便利なだけでなく、使う人に感動を与えるプロダクトができると思います。デザインと実装の両方を手がけ、そんなプロダクトを作り出せるエンジニアが憧れであり、自分の目標です。
+                      </p>
+                      <h3 class="mt-sm mb-sm">
+                        無駄がなくシンプルなモノが好き
+                      </h3>
+                      <p>
+                        私はシンプルなものに心惹かれます。多くの要素を詰め込むよりも、本当に必要なものだけを選び取ることで、本質が輝き出すと思うのです。さらに、シンプルなデザインには誰でも直感的に理解できる親しみやすさや、使う人への優しさが含まれています。その背後にある見えない豊かさや洗練こそが、シンプルさの真価だと感じています。
+                      </p>
+                      <br />
+                      <p>
+                        このポートフォリオでは、私の挑戦と成果をお伝えできればと思います。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="skills">
+              <div class="skills__title">
+                <h2 class="skills__maintitle">
+                  <p>Skills</p>
+                </h2>
+                <div class="skills__subtitle">
+                  <p>今まで学んだ技術や興味のある技術</p>
+                </div>
+              </div>
+              <div class="skills__rating-description">
+                <p>
+                  <small class="star">★1 基本を学習中</small><small class="star">★2 初歩的な実装ができる</small><small class="star">★3
+                    個人プロジェクトで実装</small><small class="star">★4 実用性を重視できる</small><small class="star">★5
+                    深い知識があり人に教えられる</small>
+                </p>
+              </div>
+              <div class="skills__main">
+                <div class="skills__frontend">
+                  <div class="skills__category">
+                    <p>Frontend</p>
+                  </div>
+                  <div class="skills__items">
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                          alt="HTML Icon" class="skills__icon" />
+                        <p class="skills__name">HTML</p>
+                      </div>
+                      <div class="skills__rating">★★★☆☆</div>
+                      <small class="skills__description">
+                        個人プロジェクトで使用経験があり、適切な構造化やセマンティックなマークアップが可能です。</small>
+                    </div>
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                          alt="CSS Icon" class="skills__icon" />
+                        <p class="skills__name">CSS</p>
+                      </div>
+                      <div class="skills__rating">★★★★☆</div>
+                      <small class="skills__description">
+                        個人プロジェクトで使用経験があり、レスポンシブデザインやフレックスボックス、グリッドレイアウトを使用したページレイアウトが可能です。</small>
+                    </div>
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
+                          alt="CSS Icon" class="skills__icon" />
+                        <p class="skills__name">Sass</p>
+                      </div>
+                      <div class="skills__rating">★★★★☆</div>
+                      <small class="skills__description">
+                        個人プロジェクトで使用経験があり、ネストやミックスイン、モジュール化を活用した再利用性の高いスタイル設計が可能です。</small>
+                    </div>
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                          alt="CSS Icon" class="skills__icon" />
+                        <p class="skills__name">JavaScript(ES6+)</p>
+                      </div>
+                      <div class="skills__rating">★★★☆☆</div>
+                      <small class="skills__description">-
+                        個人プロジェクトで使用経験があり、DOM操作を駆使してインタラクティブな動きを実装可能です。また、GSAPを使用したアニメーションやトランジションを活用して、動的なユーザーインターフェースを構築した経験があります。</small>
+                    </div>
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                          alt="CSS Icon" class="skills__icon" />
+                        <p class="skills__name">React</p>
+                      </div>
+                      <div class="skills__rating">★★☆☆☆</div>
+                      <small
+                        class="skills__description">個人プロジェクトで使用経験があり、コンポーネントベースの設計を理解し、PropsやStateを活用した動的なUIを構築可能です。</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills__backend">
+                  <div class="skills__category">
+                    <p>Backend</p>
+                  </div>
+                  <div class="skills__items">
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                          alt="HTML Icon" class="skills__icon" />
+                        <p class="skills__name">Node.js</p>
+                      </div>
+                      <div class="skills__rating">★★★☆☆</div>
+                      <small class="skills__description">-
+                        個人プロジェクトで使用経験があり、Expressを活用したRESTful
+                        APIの構築が可能です。また、非同期処理やミドルウェアを理解し、バックエンドの基本的な機能を実装できます。</small>
+                    </div>
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                          alt="CSS Icon" class="skills__icon" />
+                        <p class="skills__name">Express</p>
+                      </div>
+                      <div class="skills__rating">★★★☆☆</div>
+                      <small class="skills__description">個人プロジェクトで使用経験があり、RESTful
+                        APIの設計やルーティング、ミドルウェアの活用が可能です。また、データベース（MongoDBなど）との連携や、認証機能の実装も経験しています。</small>
+                    </div>
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                          alt="CSS Icon" class="skills__icon" />
+                        <p class="skills__name">MongoDB</p>
+                      </div>
+                      <div class="skills__rating">★★☆☆☆</div>
+                      <small class="skills__description">個人プロジェクトで使用経験があり、CRUD操作やスキーマレスなデータモデルの設計が可能です。</small>
+                    </div>
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg"
+                          alt="CSS Icon" class="skills__icon" />
+                        <p class="skills__name">Go / Gin</p>
+                      </div>
+                      <div class="skills__rating">★★☆☆☆</div>
+                      <small class="skills__description">-
+                        小規模な個人プロジェクトで使用経験があり、Ginを用いて基本的なルーティングやハンドラの作成が可能です。</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills__devops">
+                  <div class="skills__category">
+                    <p>DevOps</p>
+                  </div>
+                  <div class="skills__items">
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                          alt="HTML Icon" class="skills__icon" />
+                        <p class="skills__name">AWS</p>
+                      </div>
+                      <div class="skills__rating">★★★☆☆</div>
+                      <small class="skills__description">-
+                        個人プロジェクトや大学研究室のチーム開発で使用経験があり。EC2,
+                        S3, CloudFront, Lambda, DynamoDB, RDS, CloudFormation,
+                        CloudFront,
+                        IAM等を主に使用しました。またAWS認定クラウドプラクティショナーを保有しています。</small>
+                    </div>
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+                          alt="CSS Icon" class="skills__icon" />
+                        <p class="skills__name">Docker</p>
+                      </div>
+                      <div class="skills__rating">★★☆☆☆</div>
+                      <small class="skills__description">-
+                        小規模な開発環境で使用経験があり、コンテナの作成やイメージのビルド、基本的なDockerfileの記述が可能です。</small>
+                    </div>
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-original.svg"
+                          alt="CSS Icon" class="skills__icon" />
+                        <p class="skills__name">Apache</p>
+                      </div>
+                      <div class="skills__rating">★☆☆☆☆</div>
+                      <small class="skills__description">-
+                        EC2上でApacheを用いてWebサーバーを構築し、WordPressのインストールと設定を行った経験があります。また、基本的な設定変更やサーバーの起動・停止などの操作が可能です。</small>
+                    </div>
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+                          alt="CSS Icon" class="skills__icon" />
+                        <p class="skills__name">Linux (Ubuntu)</p>
+                      </div>
+                      <div class="skills__rating">★★★☆☆</div>
+                      <small class="skills__description">-
+                        WSL+Ubuntuを用いてLinuxの開発環境を構築し、コマンドラインでの基本操作やパッケージ管理（apt）を活用した開発を行っています。</small>
+                    </div>
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                          alt="CSS Icon" class="skills__icon" />
+                        <p class="skills__name">git / GitHub</p>
+                      </div>
+                      <div class="skills__rating">★★★☆☆</div>
+                      <small class="skills__description">GitHub
+                        Flowを活用したチーム開発を想定したブランチ運用や、Pull
+                        Requestを使ったレビューの経験があります。</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills__whatsnext">
+                  <div class="skills__category">
+                    <p>What's Next</p>
+                  </div>
+                  <div class="skills__items">
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                          alt="HTML Icon" class="skills__icon" />
+                        <p class="skills__name">TypeScript</p>
+                      </div>
+                      <small
+                        class="skills__description">JavaScriptの柔軟さによるバグを減らし、安全で効率的なコードを書くためにTypeScriptに興味を持ちました。また、ReactやNode.jsと組み合わせて保守性の高いプロジェクトを作れるようになりたいと考えています。</small>
+                    </div>
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg"
+                          alt="CSS Icon" class="skills__icon" />
+                        <p class="skills__name">NestJS</p>
+                      </div>
+                      <small
+                        class="skills__description">効率的でスケーラブルなバックエンド開発を行うために、TypeScriptベースのフレームワークであるNestJSに興味を持ちました。</small>
+                    </div>
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                          alt="CSS Icon" class="skills__icon" />
+                        <p class="skills__name">Tailwind CSS</p>
+                      </div>
+                      <small
+                        class="skills__description">効率的にスタイリングを行い、保守性の高いデザインを実現するために、ユーティリティファーストなCSSフレームワークであるTailwind
+                        CSSに興味を持ちました。</small>
+                    </div>
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg"
+                          alt="CSS Icon" class="skills__icon" />
+                        <p class="skills__name">GraphQL</p>
+                      </div>
+                      <small
+                        class="skills__description">データ取得を効率化し、必要なデータだけを柔軟に取得できるGraphQLに興味を持ちました。また、フロントエンドとバックエンドの連携を最適化し、API設計の新しい手法を学びたいと考えています。</small>
+                    </div>
+                    <div class="skills__item">
+                      <div class="skills__icon-name">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"
+                          alt="CSS Icon" class="skills__icon" />
+                        <p class="skills__name">CI / CD (GitHub Actions)</p>
+                      </div>
+                      <small class="skills__description">開発の効率化と品質向上を目的に、自動化を実現するCI/CDツールに興味を持ちました。特にGitHub
+                        Actionsを活用して、テスト・ビルド・デプロイを自動化するプロセスを学びたいと考えています。</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="skills__certification"></div> -->
+            </section>
+
+            <section id="projects">
+              <div class="projects__title">
+                <h2 class="projects__maintitle">
+                  <p>Projects</p>
+                </h2>
+                <div class="projects__subtitle">
+                  <p>私の成果物</p>
+                </div>
+              </div>
+              <div class="projects__inner">
+                <div class="projects__item">
+                  <div class="cover-slide hover-darken hover-link">
+                    <img src="images/my-portfolio-site.png" alt="My Portfolio Website Screenshot" class="img-zoom" />
+                    <div class="hover-link__buttons">
+                      <a href="https://github.com/Konyee11/my-portfolio-site"
+                        class="hover-link__button hover-link__button--icon"><i class="fab fa-github"></i>GitHub</a>
+                      <a href="#" class="hover-link__button hover-link__button--icon"><i
+                          class="fas fa-link"></i>Project</a>
+                    </div>
+                  </div>
+                  <div class="projects__name">Takuma's Portfolio</div>
+                  <div class="projects__description font-sm">
+                    <p>このポートフォリオサイトです。</p>
+                  </div>
+                </div>
+                <div class="projects__item">
+                  <div class="cover-slide hover-darken hover-link">
+                    <img src="images/my-portfolio-site.png" alt="My Portfolio Website Screenshot" class="img-zoom" />
+                    <div class="hover-link__buttons">
+                      <a href="https://github.com/Konyee11/my-portfolio-site"
+                        class="hover-link__button hover-link__button--icon"><i class="fab fa-github"></i>GitHub</a>
+                      <a href="#" class="hover-link__button hover-link__button--icon"><i
+                          class="fas fa-link"></i>Project</a>
+                    </div>
+                  </div>
+                  <div class="projects__name">Takuma's Portfolio</div>
+                  <div class="projects__description font-sm">
+                    <p>このポートフォリオサイトです。</p>
+                  </div>
+                </div>
+                <div class="projects__item">
+                  <div class="cover-slide hover-darken hover-link">
+                    <img src="images/my-portfolio-site.png" alt="My Portfolio Website Screenshot" class="img-zoom" />
+                    <div class="hover-link__buttons">
+                      <a href="https://github.com/Konyee11/my-portfolio-site"
+                        class="hover-link__button hover-link__button--icon"><i class="fab fa-github"></i>GitHub</a>
+                      <a href="#" class="hover-link__button hover-link__button--icon"><i
+                          class="fas fa-link"></i>Project</a>
+                    </div>
+                  </div>
+                  <div class="projects__name">Takuma's Portfolio</div>
+                  <div class="projects__description font-sm">
+                    <p>このポートフォリオサイトです。</p>
+                  </div>
+                </div>
+                <div class="projects__item">
+                  <div class="cover-slide hover-darken hover-link">
+                    <img src="images/my-portfolio-site.png" alt="My Portfolio Website Screenshot" class="img-zoom" />
+                    <div class="hover-link__buttons">
+                      <a href="https://github.com/Konyee11/my-portfolio-site"
+                        class="hover-link__button hover-link__button--icon"><i class="fab fa-github"></i>GitHub</a>
+                      <a href="#" class="hover-link__button hover-link__button--icon"><i
+                          class="fas fa-link"></i>Project</a>
+                    </div>
+                  </div>
+                  <div class="projects__name">Takuma's Portfolio</div>
+                  <div class="projects__description font-sm">
+                    <p>このポートフォリオサイトです。</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="contact">
+              <h2>Contact</h2>
+              <p>ご連絡は以下のメールアドレスへ。</p>
+
+              <a href="milto:t.konishi@gmail.com" class="email btn slide-bg"><i
+                  class="fa-regular fa-envelope"></i>Email</a>
+            </section>
           </div>
-        </footer>
-
-        <!-- container -->
+          <!-- main-content -->
+        </div>
+        <!-- content -->
       </div>
 
-      <nav class="mobile-menu">
-        <ul class="mobile-menu__main">
-          <li class="mobile-menu__item">
-            <a href="#about" class="mobile-menu__link">
-              <span class="main-title">About</span>
-              <span class="sub-title">私について</span>
-            </a>
-          </li>
-          <li class="mobile-menu__item">
-            <a href="#skills" class="mobile-menu__link">
-              <span class="main-title">Skills</span>
-              <span class="sub-title">今まで学んだ技術や興味のある技術</span>
-            </a>
-          </li>
-          <li class="mobile-menu__item">
-            <a href="#projects" class="mobile-menu__link">
-              <span class="main-title">Projects</span>
-              <span class="sub-title">成果物について</span>
-            </a>
-          </li>
-          <li class="mobile-menu__item">
-            <a href="#contact" class="mobile-menu__link">
-              <span class="main-title">Contact</span>
-              <span class="sub-title">連絡先</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- global-container -->
+      <footer id="footer">
+        <div class="footer__inner">
+          <div class="logo">
+            <img src="images/logo.svg" alt="Takuma's Portfolio Logo" class="logo__img" />
+            <span class="logo__name">Takuma's</span>
+            <span class="logo__portfolio accent-color">Portfolio</span>
+          </div>
+          <div class="copyright">
+            &copy; <span id="year"></span> -Takuma Konishi. All rights
+            reserved.
+          </div>
+        </div>
+      </footer>
+
+      <!-- container -->
     </div>
 
-    <!-- 著作権表示の年を動的に変更する -->
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <nav class="mobile-menu">
+      <ul class="mobile-menu__main">
+        <li class="mobile-menu__item">
+          <a href="#about" class="mobile-menu__link">
+            <span class="main-title">About</span>
+            <span class="sub-title">私について</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#skills" class="mobile-menu__link">
+            <span class="main-title">Skills</span>
+            <span class="sub-title">今まで学んだ技術や興味のある技術</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#projects" class="mobile-menu__link">
+            <span class="main-title">Projects</span>
+            <span class="sub-title">成果物について</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#contact" class="mobile-menu__link">
+            <span class="main-title">Contact</span>
+            <span class="sub-title">連絡先</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- global-container -->
+  </div>
 
-    <script src="scripts/libs/mobile-menu.js"></script>
-    <script src="scripts/libs/scroll.js"></script>
-    <script src="scripts/vendors/scroll-polyfill.js"></script>
-    <script src="scripts/main.js"></script>
-  </body>
+  <!-- 著作権表示の年を動的に変更する -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="scripts/libs/mobile-menu.js"></script>
+  <script src="scripts/libs/scroll.js"></script>
+  <script src="scripts/vendors/scroll-polyfill.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
 </html>
