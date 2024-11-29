@@ -384,7 +384,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 80%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 16px; /* ボタン間の余白 */
   opacity: 0;
   z-index: 3;
@@ -684,6 +687,12 @@ body {
   }
   #projects .projects__inner .projects__item {
     max-width: 49%;
+  }
+  #projects .projects__inner .projects__img {
+    width: 524px;
+    height: 270px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 

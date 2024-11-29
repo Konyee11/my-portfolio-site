@@ -1,162 +1,165 @@
 @use "../globals/" as *;
 
 .cover-slide {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #eaebe6;
-    opacity: 0;
-  }
-  &.inview {
     &::after {
-      opacity: 1;
-
-      @include animation(
-        $name: kf-cover-slide,
-        $duration: 1.6s,
-        $timing-function: ease-in-out,
-        $fill-mode: both
-      );
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #eaebe6;
+        opacity: 0;
     }
-  }
+    &.inview {
+        &::after {
+            opacity: 1;
+
+            @include animation(
+                $name: kf-cover-slide,
+                $duration: 1.6s,
+                $timing-function: ease-in-out,
+                $fill-mode: both
+            );
+        }
+    }
 }
 
 @keyframes kf-cover-slide {
-  0% {
-    transform-origin: left;
-    transform: scaleX(0);
-  }
-  50% {
-    transform-origin: left;
-    transform: scaleX(1);
-  }
-  50.1% {
-    transform-origin: right;
-    transform: scaleX(1);
-  }
-  100% {
-    transform-origin: right;
-    transform: scaleX(0);
-  }
+    0% {
+        transform-origin: left;
+        transform: scaleX(0);
+    }
+    50% {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    50.1% {
+        transform-origin: right;
+        transform: scaleX(1);
+    }
+    100% {
+        transform-origin: right;
+        transform: scaleX(0);
+    }
 }
 
 .img-zoom {
-  opacity: 0;
+    opacity: 0;
 
-  .inview & {
-    opacity: 1;
-    transition: transform 0.3s ease;
-    @include animation(
-      $name: kf-img-show,
-      $duration: 1.6s,
-      $timing-function: ease-in-out,
-      $fill-mode: none
-    );
+    .inview & {
+        opacity: 1;
+        transition: transform 0.3s ease;
+        @include animation(
+            $name: kf-img-show,
+            $duration: 1.6s,
+            $timing-function: ease-in-out,
+            $fill-mode: none
+        );
 
-    &:hover {
-      transform: scale(1.05);
+        &:hover {
+            transform: scale(1.05);
+        }
     }
-  }
 }
 
 @keyframes kf-img-show {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  50.1% {
-    opacity: 1;
-    transform: scale(1.5);
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    50.1% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .hover-darken {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    transition: background-color 0.3s ease;
-    pointer-events: none;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        transition: background-color 0.3s ease;
+        pointer-events: none;
 
-    @include animation(
-      $name: kf-img-show,
-      $duration: 1.6s,
-      $timing-function: ease-in-out,
-      $fill-mode: none
-    );
-  }
-  &:hover::before {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
+        @include animation(
+            $name: kf-img-show,
+            $duration: 1.6s,
+            $timing-function: ease-in-out,
+            $fill-mode: none
+        );
+    }
+    &:hover::before {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 }
 
 .hover-link {
-  position: relative;
+    position: relative;
 
-  &__buttons {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    gap: 16px; /* ボタン間の余白 */
-    opacity: 0;
-    z-index: 3;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    &__buttons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px; /* ボタン間の余白 */
+        opacity: 0;
+        z-index: 3;
+        transition: opacity 0.3s ease, transform 0.3s ease;
 
-    // ホバー時にボタンを表示
-    .hover-link:hover & {
-      opacity: 1;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  &__button {
-    @include button-base;
-    @extend .font-sm;
-    padding: 6px 12px;
-    border: 1px solid $cBlack;
-
-    @include mq(tablet) {
-      padding: 12px 24px;
+        // ホバー時にボタンを表示
+        .hover-link:hover & {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
     }
 
-    &:hover {
-      @include button-hover($cWhite, $cBlack);
-      transform: translateY(-5px);
+    &__button {
+        @include button-base;
+        @extend .font-sm;
+        padding: 6px 12px;
+        border: 1px solid $cBlack;
+
+        @include mq(tablet) {
+            padding: 12px 24px;
+        }
+
+        &:hover {
+            @include button-hover($cWhite, $cBlack);
+            transform: translateY(-5px);
+        }
+
+        &:active {
+            transform: translateY(0);
+            box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+        }
     }
 
-    &:active {
-      transform: translateY(0);
-      box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
-    }
-  }
+    &__button--icon {
+        @extend .hover-link__button;
+        display: inline-flex; /* アイコンとテキストを横並びに */
+        align-items: center; /* 中央揃え */
+        gap: 10px; /* アイコンとテキストの余白 */
 
-  &__button--icon {
-    @extend .hover-link__button;
-    display: inline-flex; /* アイコンとテキストを横並びに */
-    align-items: center; /* 中央揃え */
-    gap: 10px; /* アイコンとテキストの余白 */
-
-    i {
-      font-size: 1.2em; /* アイコンサイズ */
+        i {
+            font-size: 1.2em; /* アイコンサイズ */
+        }
     }
-  }
 }
