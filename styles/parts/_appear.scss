@@ -1,0 +1,31 @@
+$pattern: (
+    "up": translateY(5px),
+    "down": translateY(-5px),
+    "left": translateX(40px),
+    "right": translateX(-40px),
+);
+
+@each $direction, $value in $pattern {
+    .appear.#{$direction} {
+        & .item {
+            transform: $value;
+            opacity: 0;
+            transition: all 2s ease;
+        }
+    }
+
+    .appear {
+        &.inview {
+            & .item {
+                transform: none;
+                opacity: 1;
+
+                @for $i from 1 through 10 {
+                    &:nth-child(#{$i}) {
+                        transition-delay: 0.1s * $i;
+                    }
+                }
+            }
+        }
+    }
+}
