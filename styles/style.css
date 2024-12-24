@@ -758,6 +758,35 @@ body {
   justify-content: center;
 }
 
+.side {
+  display: none;
+  position: fixed;
+  top: 70%;
+  transform: translateY(-50%);
+  transition: all 2s ease;
+}
+@media screen and (min-width: 1280px) {
+  .side {
+    display: block;
+  }
+}
+.side.left {
+  left: -50px;
+}
+.side.left.inview {
+  left: 50px;
+}
+.side.left .side__inner {
+  display: flex;
+  gap: 20px;
+  transform-origin: top left;
+  transform: rotate(-90deg);
+}
+.side a {
+  text-decoration: none;
+  color: #333333;
+}
+
 .about {
   background-color: #eaebe6;
   padding: 20px;
