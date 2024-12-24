@@ -1,0 +1,33 @@
+@use "../globals/" as *;
+
+.side {
+    display: none;
+    position: fixed;
+    top: 70%;
+    transform: translateY(-50%);
+    transition: all 2s ease;
+
+    @include mq(desktop) {
+        display: block;
+    }
+
+    &.left {
+        left: -50px;
+
+        &.inview {
+            left: 50px;
+        }
+
+        & .side__inner {
+            display: flex;
+            gap: 20px;
+            transform-origin: top left;
+            transform: rotate(-90deg);
+        }
+    }
+
+    & a {
+        text-decoration: none;
+        color: $cText;
+    }
+}
