@@ -829,26 +829,26 @@ body {
 #skills .skills__main .skills__frontend {
   border: 3px solid #ddeeff;
   background-color: rgba(221, 238, 255, 0.5);
-  padding: 15px;
-  border-radius: 10%;
+  padding: 20px;
+  border-radius: 10px;
 }
 #skills .skills__main .skills__backend {
   border: 3px solid #cce5cc;
   background-color: rgba(204, 229, 204, 0.5);
-  padding: 15px;
-  border-radius: 10%;
+  padding: 20px;
+  border-radius: 10px;
 }
 #skills .skills__main .skills__devops {
   border: 3px solid #f7eedb;
   background-color: rgba(247, 238, 219, 0.5);
-  padding: 15px;
-  border-radius: 10%;
+  padding: 20px;
+  border-radius: 10px;
 }
 #skills .skills__main .skills__whatsnext {
   border: 3px solid #e8e8e8;
   background-color: rgba(232, 232, 232, 0.5);
-  padding: 15px;
-  border-radius: 10%;
+  padding: 20px;
+  border-radius: 10px;
 }
 #skills .skills__item {
   padding-top: 10px;
